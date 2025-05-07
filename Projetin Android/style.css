@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "idroid";
+    background-color: #c5ebd6;
+    line-height: 1.6;
+  }
+  
+ @font-face {
+  font-family: "idroid";
+  src: url(/fontes/idroid.otf);
+ }
+  
+  
+  header {
+    background: linear-gradient(to bottom, #2fa866, #063d1e);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  header h1 {
+    font-family: "idroid";
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-family: "idroid";
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+
+  nav {
+    background-color: #063d1e;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #83e1ad;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    background-color: #2fa866;
+    color: #063d1e;
+    border-radius: 5px;
+  }
+  
+ 
+  main {
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  article h1 {
+    color: #063d1e;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  article h2 {
+    color: #1a5c37;
+    background-color: #83e1ad;
+    padding: 5px 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+  }
+
+  article p, 
+.contact-form p, 
+aside p, 
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+    text-align: justify;
+}
+  
+ 
+    
+  
+  
+  article img {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 5px;
+  }
+  
+
+  .video {
+    background-color: #063d1e;
+    padding: 20px;
+    margin: 20px -20px;
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+  
+  .video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+  }
+  
+  
+  aside {
+    background-color: #83e1ad;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  aside h3 {
+    background-color: #1a5c37;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 10px -10px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  aside ul {
+    list-style-position: inside;
+    columns: 2;
+  }
+  
+
+  .contact-form {
+    background-color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    color: #063d1e;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+  }
+  
+  button[type="submit"] {
+    background-color: #1a5c37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #063d1e;
+  }
+  
+
+  footer {
+    background-color: #063d1e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+     
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8em;
+    }
+  
+    nav a {
+      display: block;
+      text-align: center;
+      margin: 5px 0;
+    }
+  
+    aside ul {
+      columns: 1;
+    }
+  
+    main {
+      margin: 10px;
+      padding: 15px;
+    }
+  }
